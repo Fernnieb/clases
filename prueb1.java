@@ -5,18 +5,8 @@ public class prueb1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		 Perfil a1=new Perfil();
-		 a1="HN50X20";
-		
-	
-		 
-		 Nombre(p);
-	
-	
-		
-		
+		 Perfil miPerfil=new Perfil("HN20X50");
+	 System.out.println("La altura es:"+miPerfil.getAltura());
+	 System.out.println("El peso es:"+miPerfil.getPeso());
 	}
-
-
-
 }
