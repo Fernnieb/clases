@@ -3,20 +3,20 @@ package clases;
 public class Perfil {
 	
 	private String esc;
-	private String Altura;
-	private String Peso;
+	private int Altura;
+	private double Peso;
 	
 	public Perfil(String perfil){
 	
 		esc=perfil;
 	}
-	public String getPeso() {
+	public double getPeso() {
 		
 		for(int i=2;i<esc.length();i++) {
 			
 			if(esc.substring(i,i+1).equals("X")==true) {
 			
-				String pp=(esc.substring(i+1, esc.length()));
+				double pp=Double.parseDouble(esc.substring(i+1, esc.length()));
 				Peso=pp;
 			}			
 			else {
@@ -26,12 +26,12 @@ public class Perfil {
 				
 		return Peso;
 	}
-	public String getAltura() {
+	public int getAltura() {
 	
 		for(int i=2;i<esc.length();i++) {
 			if(esc.substring(i,i+1).equals("X")==true) {
 			
-			String a=esc.substring(2,i);
+			int a=Integer.parseInt(esc.substring(2,i));
 			Altura =a;
 		}
 			else {

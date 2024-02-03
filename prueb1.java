@@ -6,7 +6,7 @@ public class prueb1 {
 		// TODO Auto-generated method stub
 
 		 Perfil miPerfil=new Perfil("HN20X50");
-	 System.out.println("La altura es:"+miPerfil.getAltura());
+	 System.out.println("La altura es:"+miPerfil.getAltura()*10);
 	 System.out.println("El peso es:"+miPerfil.getPeso());
 	}
 }
