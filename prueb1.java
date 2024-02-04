@@ -23,15 +23,15 @@ public class prueb1 {
 		 espesorala=i; 
 		 Area=(miPerfil.getAltura()*10-2*espesorala)*espesoralm+2*Ancho*espesorala;
 		 Peso=Area*den;
-		 if(miPerfil.getPeso()>=Peso) {
+		 if (miPerfil.getPeso()==Peso) {
+		continue;
+	   }
+		 else{System.out.println(miPerfil.getPeso()<=Peso);
+		System.out.println("El espesor del ala debe ser:"+i);
+		System.out.println("El peso del supuesto es: "+Peso);
 			 break;
 		 }
-		 espesorala=i;
-	 	 System.out.println("El espesor del ala debe ser:"+i);
-		System.out.println("El peso del supuesto es: "+Peso); 
 	 }
-	  
-
-	}
+}
 	
 }
